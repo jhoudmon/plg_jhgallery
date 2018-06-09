@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Galerie d'images</name>
+	<author>Jean Houdmon</author>
+	<authorEmail>jean.houdmon@gmail.com</authorEmail>
+	<creationDate>Juin 2018</creationDate>
+	<version>0.0.1</version>
+	<description>PLG_JHGALLERY_XML_DESC</description>
+	<!-- Parameters -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="galleries_rootfolder" type="text" default="images" label="PLG_JHGALLERY_ROOTFOLDER" description="PLG_JHGALLERY_ROOTFOLDER_DESC" />
+				<field name="thb_width" type="text" default="200" size="3" label="PLG_JHGALLERY_TW" description="PLG_JHGALLERY_TW_DESC" />
+				<field name="thb_height" type="text" default="160" size="3" label="PLG_JHGALLERY_TH" description="PLG_JHGALLERY_TH_DESC" />
+				<field name="jpg_quality" type="text" default="80" size="3" label="PLG_JHGALLERY_TQ" description="PLG_JHGALLERY_TQ_DESC" />
+				<field name="cache_expire_time" type="text" default="3600" size="3" label="PLG_JHGALLERY_TCEXP" description="PLG_JHGALLERY_TCEXP_DESC" />
+				<field name="memoryLimit" type="text" default="" size="3" label="PLG_JHGALLERY_ML" description="PLG_JHGALLERY_ML_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<!-- Files -->
+	<files folder="plugin" destination="jhgallery">
+		<filename plugin="jhgallery">jhgallery.php</filename>
+		<filename plugin="jhgallery">jhgallery.xml</filename>
+		<folder>jhgallery</folder>
+	</files>
+	<languages folder="plugin">
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_content_jhgallery.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_content_jhgallery.sys.ini</language>
+	</languages>
+</extension>

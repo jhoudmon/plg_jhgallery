@@ -1,0 +1,4 @@
+#!/bin/bash
+[[ -d build ]] && rm -rf build
+mkdir build
+zip -r build/plg_jhgallery.zip plugin plg_jhgallery.xml
